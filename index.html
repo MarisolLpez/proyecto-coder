@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/40531b369c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>CasaDeOración|Inicio</title>
+  </head>
+  <body>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvas"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Secciones</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
+            <li><a href="./pages/kids.html">CDO Kids</a></li>
+            <li><a href="./pages/jovenes.html">Jóvenes CDO</a></li>
+            <li><a href="./pages/conectar.html">Quiero conectar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header>
+      <section class="max-width-container">
+        <img src="./assets/img/logo.png" alt="Logo" id="logo-image" />
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
+            <li><a href="./pages/kids.html">CDO Kids</a></li>
+            <li><a href="./pages/jovenes.html">Jóvenes CDO</a></li>
+            <li><a href="./pages/conectar.html">Quiero conectar</a></li>
+            <li>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvas"
+                role="button"
+                aria-controls="offcanvas"
+                ><img
+                  src="./assets/icons/hamburger-white.png"
+                  alt="Botón hamburguer sidebar"
+                  id="hamburguer-btn"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="hero-container">
+        <img src="./assets/img/hero-index.png" alt="Ventanal Iglesia" />
+        <h1 class="titulo-pagina">¡Bienvenido a Casa!</h1>
+      </section>
+      <section class="max-width-container">
+        <section class="info-container">
+          <section class="horarios-mapa">
+            <article>
+              <h2>Horarios</h2>
+              <p>
+                Todos los domingos<br />
+                Careaga 329 - 11am | 7:30pm
+              </p>
+            </article>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.6392719998835!2d-58.04118692346897!3d-33.2497525872635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a53f226abdba29%3A0x2d68ba1c4448e30d!2sCentro%20Cristiano%20Tiempo%20de%20Cosecha!5e0!3m2!1ses-419!2suy!4v1718679484303!5m2!1ses-419!2suy"
+              width="596"
+              height="245"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+          <section class="contactanos-cta desktop">
+            <h2>¡Tenemos un lugar para ti!</h2>
+            <p>
+              Si quieres ser parte de CDO, puedes contactarnos para conocerte.
+            </p>
+            <button>CONTACTARNOS</button>
+          </section>
+          <section class="contactanos-cta mobile">
+            <a href="#">
+              <h2>¡Tenemos un lugar para ti!</h2>
+              <p>
+                Si quieres ser parte de CDO, puedes contactarnos para conocerte.
+                Haz click para conectar
+              </p>
+            </a>
+          </section>
+        </section>
+        <section class="videos-container">
+          <h2>Por si te lo perdiste:</h2>
+          <iframe
+            width="420"
+            height="345"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            frameborder="0"
+          ></iframe>
+          <img
+            src="./assets/img/miniatura-uno.png"
+            alt="Miniatura Video Uno"
+            class="miniatura"
+            id="miniatura-uno"
+          />
+          <img
+            src="./assets/img/miniatura-dos.png"
+            alt="Miniatura Video Dos"
+            class="miniatura"
+            id="miniatura-dos"
+          />
+          <img
+            src="./assets/img/miniatura-tres.png"
+            alt="Miniatura Video Tres"
+            class="miniatura"
+            id="miniatura-tres"
+          />
+        </section>
+      </section>
+    </main>
+    <footer class="footer-max-width-container">
+      <section class="redes">
+        <article>
+          <h4>¡Seguinos!</h4>
+          <p>
+            Mantente al tanto de todo lo que pasa en <br />
+            nuestra iglesia.
+          </p>
+        </article>
+        <section>
+          <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/?locale=es_LA" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </section>
+      </section>
+      <nav>
+        <h4>Mapa de Sitio</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
+          <li><a href="./pages/kids.html">CDO Kids</a></li>
+          <li><a href="./pages/jovenes.html">Jóvenes CDO</a></li>
+          <li><a href="./pages/conectar.html">Quiero conectar</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

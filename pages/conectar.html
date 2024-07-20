@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/40531b369c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>CasaDeOración|Conectar</title>
+  </head>
+  <body>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvas"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Secciones</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./quienessomos.html">Quienes somos</a></li>
+            <li><a href="./kids.html">CDO Kids</a></li>
+            <li><a href="./jovenes.html">Jóvenes CDO</a></li>
+            <li><a href="#">Quiero conectar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header>
+      <section class="max-width-container">
+        <img src="../assets/img/logo.png" alt="Logo" id="logo-image" />
+        <nav>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./quienessomos.html">Quienes somos</a></li>
+            <li><a href="./kids.html">CDO Kids</a></li>
+            <li><a href="./jovenes.html">Jóvenes CDO</a></li>
+            <li><a href="#">Quiero conectar</a></li>
+            <li>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvas"
+                role="button"
+                aria-controls="offcanvas"
+                ><img
+                  src="../assets/icons/hamburger-white.png"
+                  alt="Botón hamburguer sidebar"
+                  id="hamburguer-btn"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="hero-container">
+        <img src="../assets/img/hero-conectar.png" alt="Abrazo" />
+        <h1 class="titulo-pagina">Conectar</h1>
+      </section>
+      <section class="max-width-container contactanos-container">
+        <section class="contactanos-description">
+          <p>
+            ¡Estamos felices de que hayas llegado hasta acá y nos encantaría que
+            formes parte de esta familia!
+          </p>
+          <p>
+            Si tomaste la decisión de seguir a Jesús o querés conocer más sobre
+            la vida de la iglesia y cómo podés conectar, completá el siguiente
+            formulario y alguien del equipo va a ponerse en contacto contigo en
+            breve.
+          </p>
+          <p>
+            (La información será utilizada con el único fin de poder ayudarte y
+            no será compartida con nadie más)
+          </p>
+        </section>
+        <form>
+          <label for="correo"
+            >Correo
+            <span class="requerido" title="requerido" required>*</span></label
+          >
+          <input type="text" id="correo" name="correo" /><br />
+          <label for="nombre"
+            >Nombre
+            <span class="requerido" title="requerido" required>*</span></label
+          ><br />
+          <input type="text" id="nombre" name="nombre" /><br />
+          <label for="apellido"
+            >Apellido
+            <span class="requerido" title="requerido" required>*</span></label
+          ><br />
+          <input type="text" id="apellido" name="apellido" /><br />
+          <label for="edad"
+            >Edad
+            <span class="requerido" title="requerido" required>*</span></label
+          ><br />
+          <input type="text" id="apellido" name="apellido" /><br />
+          <label for="celular"
+            >Celular
+            <span class="requerido" title="requerido" required>*</span></label
+          ><br />
+          <input type="text" id="celular" name="celular" /><br />
+          <fieldset>
+            <legend>Marca las opciones que te identifiquen*</legend>
+            <section>
+              <input type="checkbox" id="nuevo" name="nuevo" value="nuevo" />
+              <label for="nuevo">Tomé la decisión de seguir a Jesús</label>
+            </section>
+            <section>
+              <input
+                type="checkbox"
+                id="SERVIR"
+                name="servir"
+                value="servir"
+              /><label for="servir">Quiero servir en un equipo</label>
+            </section>
+            <section>
+              <input type="checkbox" id="info" name="info" value="info" /><label
+                for="info"
+                >Quiero recibir más información sobre la iglesia</label
+              >
+            </section>
+            <section>
+              <label for="checkbox">Otro:</label>
+              <input type="text" id="otro" name="otro" />
+            </section>
+          </fieldset>
+
+          <fieldset>
+            <legend>Marca la opción que te identifique*</legend>
+            <section>
+              <input type="radio" id="ajeno" name="ajeno" value="ajeno" /><label
+                for="ajeno"
+                >No voy a ninguna iglesia</label
+              >
+            </section>
+            <section>
+              <input
+                type="radio"
+                id="primerizo"
+                name="primerizo"
+                value="primerizo"
+              />
+              <label for="primerizo">Es mi primera vez en la iglesia</label>
+            </section>
+            <section>
+              <input
+                type="radio"
+                id="asistente"
+                name="asistente"
+                value="asistente"
+              /><label for="asistente">Voy a una iglesia</label>
+            </section>
+            <section>
+              <input type="radio" id="miembro" name="miembro" value="miembro" />
+              <label for="miembro">Voy a Casa de Oración</label>
+            </section>
+          </fieldset>
+
+          <button>ENVIAR</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer-max-width-container">
+      <section class="redes">
+        <article>
+          <h4>¡Seguinos!</h4>
+          <p>
+            Mantente al tanto de todo lo que pasa en <br />
+            nuestra iglesia.
+          </p>
+        </article>
+        <section>
+          <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/?locale=es_LA" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </section>
+      </section>
+      <nav>
+        <h4>Mapa de Sitio</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../pages/quienessomos.html">Quienes somos</a></li>
+          <li><a href="../pages/kids.html">CDO Kids</a></li>
+          <li><a href="../pages/jovenes.html">Jóvenes CDO</a></li>
+          <li><a href="#">Quiero conectar</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

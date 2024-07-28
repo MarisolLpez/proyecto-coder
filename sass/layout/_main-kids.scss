@@ -1,0 +1,63 @@
+.hero-container.kids img {
+  object-position: 0 32%;
+}
+  
+.kids-cdo {
+  @include flex(column, none, center, none);
+  margin: 100px 0;
+  width: 90%;
+  .description-section {
+    flex: 1;
+    box-sizing: border-box;
+    padding-right: 22px;
+    @include tablet {
+      border-right: none;
+      border-bottom: solid 1px $color-dark;
+      padding-right: 0;
+      padding-bottom: 22px;
+    }
+  }
+  
+  .kids-info {
+    @include flex(row, none, none, none);
+    flex: 1;
+    box-sizing: border-box;
+    padding-right: 22px;
+    width: MIN(800px, 90%);
+    @include tablet {
+      @include flex(column, none, none, none);
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+    }
+    .qr-section {
+      flex: 1;
+      @include flex(none, none, none, 22px);
+      border-left: solid 1px $color-dark;
+      box-sizing: border-box;
+      padding-left: 22px;
+      @include tablet {
+        border-left: none;
+        border-top: solid 1px black;
+        padding-left: 0;
+        padding-top: 22px;
+      }
+      #kids-qr {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+.kids-donde-cuando{
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.titulo-pagina{
+  @include tablet {
+    font-size: 50px;
+  }
+}

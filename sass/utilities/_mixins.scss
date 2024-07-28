@@ -1,0 +1,28 @@
+@mixin flex($direction, $justify, $align, $f-gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $f-gap;
+}
+
+@mixin grid($columns, $rows, $g-column, $g-row, $g-gap){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-column: $g-column;
+    grid-row: $g-row;
+    grid-gap:$g-gap;
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (orientation: portrait) and (max-width: 600px){
+        @content;
+    }
+}

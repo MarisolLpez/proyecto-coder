@@ -1,0 +1,44 @@
+footer {
+    background-color: $color-dark;
+    color: $color-text-light;
+    height: 322px;
+    justify-items: center;
+    align-items: center;
+    @include grid (1fr 1fr, none, none, none, none);
+    .redes {
+      @include flex (none, none, none, 42px);
+      section {
+        @include grid (48px 48px, 48px 48px, none, none, none);
+      }
+      p {
+        font-size: map-get($font-size , size14);
+        font-family: "Poppins", sans-serif;
+      }
+      a {
+        @include flex (none, center, center, none);
+        font-size: map-get($font-size , size24);
+        color: $color-text-light;
+        text-decoration: none;
+      }
+  }
+  nav {
+    @include flex (column, end, none, none);
+    ul {
+      padding-left: 0;
+      a {
+        font-size: map-get($font-size , size14);
+        font-family: "Poppins", sans-serif;
+        list-style-type: none;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $color-text-light;
+      }
+      a:active {
+        @extend a:visited;
+      }a:link {
+        @extend a:visited;
+      }
+    }
+  }
+}

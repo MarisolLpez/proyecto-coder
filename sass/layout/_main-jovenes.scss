@@ -1,0 +1,64 @@
+.jovenes-hero-container {
+  position: relative;
+  height: 1000px;
+  overflow-y: hidden;
+  @include tablet {
+    height: auto;
+  }
+  @include flex(column, none, center, 150px);
+  .jovenes-info {
+    color: $color-text-light;
+    @include flex(none, space-between, center, none);
+    width: MIN(1500px, 90%);
+    margin-top: 100px;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .titulo-jovenes {
+    color: $color-text-light;
+    text-align: center;
+    h1 {
+      font-size: map-get($font-size , size128);
+      .titulo-pagina{
+        @include tablet {
+          font-size: 50px;
+        }
+      }
+    }
+    h2 {
+      font-size: map-get($font-size , size32);
+    }
+  }
+  .direccion {
+    font-family: "Poppins", sans-serif;
+  }
+  h2 {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.jovenes-descripcion {
+  max-width: MIN(900px, 90%);
+  margin: 100px 0;
+}
+
+.jovenes-redes {
+  background-color: $color-dark;
+  color: $color-text-light;
+  width: MIN(900px, 90%);
+  border-radius: 20px;
+  padding: 50px 0;
+  @include flex(column, center, center, none);
+  section {
+    @include flex(none, none, none, 10px);
+  }
+  button {
+    padding: 10px 40px;
+    border-radius: 10px;
+  }
+}

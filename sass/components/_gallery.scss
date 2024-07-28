@@ -1,0 +1,28 @@
+/*kids*/
+.kids-galeria-container{
+    @include flex(column, none, center, none);
+    width: 100%;
+    .kids-galeria {
+      @include grid(repeat(auto-fit, minmax(200px, 1fr)), none, 10px, none, none);
+      width: 90%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .jovenes-galeria-container{
+    @include flex(column, none, center, none);
+    width: 100%;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    .jovenes-galeria {
+      @include grid(repeat(auto-fit, minmax(200px, 1fr)), none, 10px, none, none);
+      width: 90%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }

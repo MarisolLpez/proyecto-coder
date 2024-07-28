@@ -1,0 +1,698 @@
+@font-face {
+  font-family: Richey;
+  src: url(../assets/fonts/Richey.otf) format("opentype");
+}
+
+:root {
+  --max-screen-width: 1500px;
+}
+
+* {
+  margin: 0;
+  font-family: Richey, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+}
+
+#logo-image {
+  width: 26px;
+  height: 32px;
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  font-weight: 400;
+  align-items: center;
+  margin: 0;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+.max-width-container {
+  max-width: var(--max-screen-width);
+}
+
+header .max-width-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 48px;
+}
+
+header a:visited,
+header a:active,
+header a:link {
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.hero-container {
+  height: 600px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-container > h1 {
+  color: white;
+  position: absolute;
+  font-size: 99px;
+  font-weight: lighter;
+}
+
+main > .max-width-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.info-container {
+  display: flex;
+  padding: 96px 0;
+  gap: 60px;
+}
+
+.info-container p {
+  font-family: "Poppins", sans-serif;
+}
+
+.horarios-mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.horarios-mapa > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.horarios-mapa h2 {
+  font-size: 32px;
+}
+
+.horarios-mapa iframe {
+  margin-top: 24px;
+}
+
+.info-container p {
+  line-height: 1.1;
+  text-align: center;
+}
+
+.contactanos-cta {
+  box-sizing: border-box;
+  width: 298px;
+  padding: 0 50px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  border-radius: 10px;
+  min-height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background-image: url("../assets/img/tarjeta-sillas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactanos-cta.mobile {
+  display: none;
+}
+
+.contactanos-cta > h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.contactanos-cta > p {
+  text-align: left;
+  font-weight: 200;
+}
+
+.contactanos-cta > button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .info-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .horarios-mapa iframe {
+    width: 90%;
+  }
+
+  .contactanos-cta.desktop {
+    display: none;
+  }
+
+  .contactanos-cta.mobile {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .contactanos-cta.mobile a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.videos-container {
+  width: min(954px, 90%);
+  padding-bottom: 64px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.videos-container > h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  font-size: 32px;
+  margin: auto;
+}
+
+.videos-container iframe {
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+.videos-container #miniatura-uno {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.videos-container #miniatura-dos {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.videos-container #miniatura-tres {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.videos-container .miniatura {
+  border-radius: 10px;
+}
+
+.videos-container img,
+.videos-container iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 322px;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.redes {
+  display: flex;
+  gap: 42px;
+}
+
+.redes section {
+  display: grid;
+  grid-template-columns: 48px 48px;
+  grid-template-rows: 48px 48px;
+}
+
+.redes p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li a {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+footer a:visited,
+footer a:active,
+footer a:link {
+  color: white;
+  font-family: inherit;
+}
+
+.quienes-somos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  margin: 80px 0;
+}
+
+.quienes-somos .contenedor-imagen {
+  width: 450px;
+  height: 250px;
+}
+
+.quienes-somos img {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.parrafos-descriptivos {
+  width: min(1200px, 90%);
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafos-descriptivos p {
+  width: 450px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (orientation: portrait) and (max-width: 960px) {
+  .quienes-somos .contenedor-imagen {
+    width: 100%;
+    height: 250px;
+  }
+
+  .quienes-somos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .parrafos-descriptivos {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .parrafos-descriptivos:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+
+  .parrafos-descriptivos p {
+    width: 100%;
+  }
+}
+
+.hero-container.kids img {
+  object-position: 0 32%;
+}
+
+.kids-cdo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+  width: 90%;
+}
+
+.kids-info {
+  width: min(800px, 90%);
+  display: flex;
+}
+
+.kids-info .description-section {
+  flex: 1;
+  border-right: solid 1px black;
+  box-sizing: border-box;
+  padding-right: 22px;
+}
+
+.kids-info p {
+  font-family: "Poppins", sans-serif;
+}
+
+.kids-info .qr-section {
+  flex: 1;
+  display: flex;
+  border-left: solid 1px black;
+  box-sizing: border-box;
+  padding-left: 22px;
+  gap: 22px;
+}
+
+#kids-qr {
+  width: 180px;
+  height: 180px;
+}
+
+@media (max-width: 800px) {
+  .kids-info {
+    flex-direction: column;
+  }
+
+  .kids-info .description-section {
+    border-right: none;
+    border-bottom: solid 1px black;
+    padding-right: 0;
+    padding-bottom: 22px;
+  }
+
+  .kids-info .qr-section {
+    border-left: none;
+    border-top: solid 1px black;
+    padding-left: 0;
+    padding-top: 22px;
+  }
+}
+
+.kids-donde-cuando-container {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+.kids-donde-cuando {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+.kids-donde-cuando-card {
+  width: min(500px, 90%);
+  min-height: 500px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kids-donde-cuando-card p {
+  font-family: "Poppins", sans-serif;
+}
+
+.kids-donde-cuando-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 0 8%;
+}
+
+.kids-donde-cuando-card .card-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.card-info-wrapper p {
+  width: 70%;
+  margin: 0;
+}
+
+.card-info-wrapper section {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 850px) {
+  .kids-donde-cuando {
+    flex-direction: column;
+  }
+}
+
+.kids-galeria-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.kids-galeria {
+  display: grid;
+  width: 90%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.kids-galeria img {
+  width: 100%;
+  height: auto;
+}
+
+.jovenes-hero-container {
+  position: relative;
+  height: 1000px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+
+.jovenes-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1500px, 90%);
+  margin-top: 100px;
+}
+
+.jovenes-hero-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.titulo-jovenes {
+  color: white;
+  text-align: center;
+}
+
+.titulo-jovenes h1 {
+  font-size: 128px;
+}
+
+.titulo-jovenes h2,
+.jovenes-hero-container .direccion {
+  font-family: "Poppins", sans-serif;
+}
+
+.titulo-jovenes h2 {
+  font-size: 32px;
+}
+
+.jovenes-descripcion {
+  max-width: min(900px, 90%);
+  margin: 100px 0;
+}
+
+.jovenes-redes {
+  background-color: black;
+  color: white;
+  width: min(900px, 90%);
+  border-radius: 20px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jovenes-redes section {
+  display: flex;
+  gap: 10px;
+}
+
+.jovenes-redes button {
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.jovenes-galeria-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(900px, 90%);
+  margin: 100px 0;
+}
+
+.jovenes-galeria {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.jovenes-galeria img {
+  width: 100%;
+  height: auto;
+}
+
+.max-width-container.contactanos-container {
+  flex-direction: row;
+  gap: 40px;
+  align-items: start;
+  margin: 100px auto;
+}
+
+.contactanos-container * {
+  font-family: "Poppins", sans-serif;
+}
+
+.contactanos-description {
+  max-width: min(60ch, 90%);
+}
+
+.contactanos-container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+}
+
+.contactanos-container form fieldset {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  margin-bottom: 1em;
+  border: 1px solid #666;
+  padding: 10px;
+  gap: 4px;
+}
+
+.contactanos-container form legend {
+  float: none;
+  width: auto;
+}
+
+.contactanos-container form fieldset section {
+  display: flex;
+  gap: 8px;
+}
+
+.contactanos-container form fieldset input[type="text"] {
+  width: 100%;
+  border: hidden;
+  border-bottom: solid 1px black;
+}
+
+.contactanos-container form .requerido {
+  color: red;
+  font-size: 22px;
+}
+
+.contactanos-container button {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1020px) {
+  .max-width-container.contactanos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#hamburguer-btn {
+  display: none;
+}
+
+h1.titulo-pagina {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  h1.titulo-pagina {
+    font-size: 50px;
+  }
+
+  h2.titulo-pagina {
+    font-size: 30px;
+  }
+
+  #hamburguer-btn {
+    width: 22px;
+    display: block;
+  }
+
+  header nav li:not(:nth-last-child(1)) {
+    display: none;
+  }
+
+  .jovenes-hero-container {
+    height: auto;
+  }
+}
+

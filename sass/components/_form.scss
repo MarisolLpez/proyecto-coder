@@ -1,0 +1,37 @@
+.contactanos-container{
+    form {
+    @include flex(column, none, none, none);
+    max-width: 90%;
+        fieldset {
+            @include flex(column, none, none,4px);
+            border-style: solid;
+            margin-bottom: 1em;
+            border: 1px solid #666;
+            padding: 10px;
+            section {
+                @include flex(row, none, none, 8px);
+            }
+            input[type="text"] {
+                width: 100%;
+                border: hidden;
+                border-bottom: solid 1px $color-dark;
+            }
+        }
+        legend {
+            float: none;
+            width: auto;
+        }
+        .requerido {
+            color: red;
+            font-size: map-get($font-size , size22);
+        }
+    }
+    button {
+    background-color: $color-dark;
+    color: $color-text-light;
+    }
+}
+
+.contactanos-container * {
+    font-family: "Poppins", sans-serif;
+  }

@@ -1,0 +1,26 @@
+/*utilities*/
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+/*base*/
+@import "./base/resets";
+@import "./base/fonts";
+
+/*layouts*/
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-quienessomos";
+@import "./layout/main-kids";
+@import "./layout/main-jovenes";
+@import "./layout/main-conectar";
+@import "./layout/footer";
+
+/*components*/
+@import "./components/bootstrap";
+@import "./components/cards";
+@import "./components/form";
+@import "./components/gallery";
+
+/*mediaquery*/
+/*@import "./utilities/media-queries";*/

@@ -1,0 +1,47 @@
+header {
+    background-color: $color-dark;
+    color: $color-text-light;
+    @include flex(none, center, center, none);
+    height: 4rem;
+    font-weight: map-get($font-weight , s );
+    #logo-image {
+        width: 1.625rem;
+        height: 2rem;
+    }
+    ul {
+        @include flex(none, none, center, 2.5rem);
+        font-weight: map-get($font-weight , m );
+        margin: 0;
+        li {
+            font-family: "Poppins", sans-serif;
+            list-style-type: none;
+            a:visited{
+                color: $color-text-light;
+                text-decoration: none;
+                font-family: inherit;
+            }
+            a:active{
+                @extend a:visited;
+            }
+            a:link{
+                @extend a:visited;
+            }
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+    .max-width-container {
+        max-width: var(--max-screen-width);
+        flex: 1;
+        @include flex(none, space-between, center, none);
+        box-sizing: border-box;
+        padding: 0 48px;
+    }
+}
+
+.titulo-pagina{
+    @include tablet {
+      font-size: 50px;
+    }
+  }

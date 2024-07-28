@@ -1,0 +1,18 @@
+:root {
+    --max-screen-width: 1500px;
+  }
+  
+* {
+    margin: 0px;
+    font-family: Richey, sans-serif;
+  }
+
+h1.titulo-pagina {
+    text-align: center;
+  }
+
+.max-width-container {
+    margin: 0 auto;
+    @include flex(column, center, center, none);
+    overflow: hidden;
+  }

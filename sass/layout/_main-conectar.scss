@@ -8,7 +8,7 @@
 
 .contactanos-container {
   @extend .max-width-container;
-  @include tabet {
+  @include tablet {
     @include flex(column, none, center, 40px);
   }
 }

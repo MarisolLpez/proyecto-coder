@@ -52,6 +52,9 @@ header {
         color: white;
         text-decoration: none;
         font-family: inherit; }
+    @media screen and (max-width: 768px) {
+      header ul {
+        display: none; } }
   header .max-width-container, header .contactanos-container {
     max-width: var(--max-screen-width);
     flex: 1;
@@ -62,6 +65,10 @@ header {
     gap: none;
     box-sizing: border-box;
     padding: 0 48px; }
+
+@media screen and (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 50px; } }
 
 .hero-container {
   height: 37.5rem;
@@ -81,6 +88,9 @@ header {
     position: absolute;
     font-size: 99px;
     font-weight: lighter; }
+    @media screen and (max-width: 768px) {
+      .hero-container h1 .titulo-pagina {
+        font-size: 50px; } }
 
 main .info-container {
   display: flex;
@@ -281,6 +291,10 @@ main .videos-container {
     .parrafos-descriptivos .parrafos-descriptivos:nth-child(2n) {
       flex-direction: column-reverse; } }
 
+@media screen and (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 50px; } }
+
 .hero-container.kids img, .hero-container.kids main .videos-container iframe, main .videos-container .hero-container.kids iframe {
   object-position: 0 32%; }
 
@@ -345,6 +359,10 @@ main .videos-container {
   .kids-donde-cuando {
     flex-direction: column; } }
 
+@media screen and (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 50px; } }
+
 .jovenes-hero-container {
   position: relative;
   height: 1000px;
@@ -354,6 +372,9 @@ main .videos-container {
   justify-content: none;
   align-items: center;
   gap: 150px; }
+  @media screen and (max-width: 768px) {
+    .jovenes-hero-container {
+      height: auto; } }
   .jovenes-hero-container .jovenes-info {
     color: white;
     display: flex;
@@ -374,6 +395,9 @@ main .videos-container {
     text-align: center; }
     .jovenes-hero-container .titulo-jovenes h1 {
       font-size: 128px; }
+      @media screen and (max-width: 768px) {
+        .jovenes-hero-container .titulo-jovenes h1 .titulo-pagina {
+          font-size: 50px; } }
     .jovenes-hero-container .titulo-jovenes h2 {
       font-size: 2rem; }
   .jovenes-hero-container .direccion {
@@ -415,6 +439,18 @@ main .videos-container {
   margin: 100px auto; }
   .max-width-container .contactanos-description, .contactanos-container .contactanos-description {
     max-width: MIN(60ch, 90%); }
+
+@media screen and (max-width: 768px) {
+  .contactanos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: 40px; } }
+
+@media screen and (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 50px; } }
 
 footer {
   background-color: black;
@@ -604,6 +640,3 @@ footer {
     .jovenes-galeria-container .jovenes-galeria img, .jovenes-galeria-container .jovenes-galeria main .videos-container iframe, main .videos-container .jovenes-galeria-container .jovenes-galeria iframe {
       width: 100%;
       height: auto; }
-
-/*mediaquery*/
-/*@import "./utilities/media-queries";*/

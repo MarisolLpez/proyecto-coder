@@ -1,0 +1,112 @@
+@media (max-width: 768px){
+
+    header{
+        ul{
+            display: none;
+            img#hamburguer-btn{
+                width: 22px;
+                display: block;
+                background-color: red;
+            }
+        }
+        
+    }
+
+    main{
+        .hero-container{
+            .titulo-pagina{
+                font-size: 50px;
+              }
+        }
+        .info-container{
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+            .horarios-mapa{
+                width: 100%;
+            }
+        }
+    }
+
+    .quienes-somos{
+        .contenedor-imagen{
+            width: 100%;
+            height: 250px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .parrafos-descriptivos{
+        @include flex(column, center, center, 22px);
+        p{
+            width: 100%;
+        }
+    }
+    .parrafo-dos{
+        flex-direction: column-reverse;
+    }
+    .parrafo-cuatro{
+        flex-direction: column-reverse;
+    }
+
+    .kids-cdo{
+        .description-section{
+            border-right: none;
+            border-bottom: none;
+            padding-right: 10px;
+            padding-bottom: 22px;
+        }
+    }
+
+    .kids-info{
+        @include flex(column, none, none, none);
+        .qr-section{
+            flex-direction: column;
+            border-left: none;
+            border-top: none;
+            padding-left: 0;
+            padding-top: 22px;
+            padding-right: 0px;
+        }
+    }
+
+    .kids-donde-cuando{
+        flex-direction: column;
+    }
+      
+    .jovenes-hero-container {
+        height: auto;
+    }
+
+    .titulo-jovenes{
+        .titulo-pagina{
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+
+    main.conectar{
+        .contactanos-container {
+            @include flex(column, none, center, 40px);
+        }
+    }
+
+    .kids-galeria-container{
+        .jovenes-galeria-container{
+            .jovenes-galeria{
+                width: 90%;
+            }
+        }
+    }
+
+    footer{
+        .redes{
+            margin-left: 20%;
+        }
+    }
+}

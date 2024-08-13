@@ -4,7 +4,7 @@
     width: 100%;
     .kids-galeria {
       @include grid(repeat(auto-fit, minmax(200px, 1fr)), none, 10px, none, none);
-      width: 90%;
+      width: 70%;
       img {
         width: 100%;
         height: auto;
@@ -19,7 +19,7 @@
     margin-bottom: 128px;
     .jovenes-galeria {
       @include grid(repeat(auto-fit, minmax(200px, 1fr)), none, 10px, none, none);
-      width: 90%;
+      width: 60%;
       img {
         width: 100%;
         height: auto;

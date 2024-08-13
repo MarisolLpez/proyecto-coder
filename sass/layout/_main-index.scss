@@ -13,22 +13,18 @@
     position: absolute;
     font-size: 99px;
     font-weight: lighter;
-    .titulo-pagina{
-      @include tablet {
-        font-size: 50px;
-      }
-    }
   }
 }
 
 main{
+  .max-width-container{
+    margin: 0 auto;
+    @include flex(column, center, center, none);
+    overflow: hidden;
+  };
   .info-container {
     @include flex(none, none, none, 60px);
     padding: 96px 0;
-    @include tablet {
-      flex-direction: column-reverse;
-      width: 100%;
-    };
     p {
       font-family: "Poppins", sans-serif;
       line-height: 1.1;
@@ -45,10 +41,11 @@ main{
       }
       iframe {
         margin-top: 24px;
-        @include tablet {
-          width: 90%;
-        };
       }
+    }
+
+    .contactanos-cta.mobile { 
+      display: none;
     }
     .contactanos-cta {
       box-sizing: border-box;
@@ -62,21 +59,7 @@ main{
       background-image: url("../assets/img/tarjeta-sillas.png");
       background-size: cover;
       background-repeat: no-repeat;
-      .mobile {
-        display: none;
-        @include mobile {
-          width: 90%;
-          margin: 0 auto;
-          display: flex;
-        };
-        a {
-          @include mobile {
-            color: $color-text-light;
-            text-align: center;
-            text-decoration: none;
-          }
-        }
-      }
+      
       h2 {
         font-size: map-get($font-size , size32 );
         font-weight: map-get($font-weight , m );
@@ -98,9 +81,9 @@ main{
   .videos-container {
     width: MIN(954px, 90%);
     padding-bottom: 64px;
-    @include grid(repeat(3,1fr), 1fr 3fr 1fr, none, none, 2opx);
+    @include grid(repeat(3,1fr), 1fr 3fr 1fr, none, none, 2px);
     h2 {
-      @include grid(none, none, 1/-1, 1, none);
+      @include grid(none, none, 1/span 3, 1, none);
       font-size: map-get($font-size , size32);
       margin: auto;
     }
@@ -112,7 +95,7 @@ main{
     }
     iframe {
       @extend img;
-      @include grid(none, none, 1/-1, 2, none);
+      @include grid(none, none, 1/span 3, 2, none);
     }
     #miniatura-uno {
       @include grid(none, none, 1, 3, none);

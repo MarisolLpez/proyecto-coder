@@ -1,20 +1,13 @@
-.max-width-container {
-  @include flex(row, none, start, 40px);
-  margin: 100px auto;
+main.conectar{
+  .max-width-container {
+    @include flex(row, none, start, 40px);
+    margin: 100px auto;
+  }
   .contactanos-description {
     max-width: MIN(60ch, 90%);
   }
 }
 
-.contactanos-container {
-  @extend .max-width-container;
-  @include tablet {
-    @include flex(column, none, center, 40px);
-  }
-}
 
-.titulo-pagina{
-  @include tablet {
-    font-size: 50px;
-  }
-}
+
+

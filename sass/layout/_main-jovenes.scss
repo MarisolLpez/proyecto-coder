@@ -2,9 +2,6 @@
   position: relative;
   height: 1000px;
   overflow-y: hidden;
-  @include tablet {
-    height: auto;
-  }
   @include flex(column, none, center, 150px);
   .jovenes-info {
     color: $color-text-light;
@@ -24,11 +21,6 @@
     text-align: center;
     h1 {
       font-size: map-get($font-size , size128);
-      .titulo-pagina{
-        @include tablet {
-          font-size: 50px;
-        }
-      }
     }
     h2 {
       font-size: map-get($font-size , size32);
@@ -44,7 +36,13 @@
 
 .jovenes-descripcion {
   max-width: MIN(900px, 90%);
-  margin: 100px 0;
+  margin: 100px 0 50px;
+  h3{
+    font-size: map-get($font-size, size32 );
+  }
+  p{
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 .jovenes-redes {
@@ -60,5 +58,6 @@
   button {
     padding: 10px 40px;
     border-radius: 10px;
+    font-family: "Poppins", sans-serif;
   }
 }

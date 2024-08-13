@@ -1,0 +1,20 @@
+@media screen and (orientation: portrait) and (max-width: 450px){
+
+    .contactanos-cta.mobile { 
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+        a {
+            color: $color-text-light;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    .contactanos-cta.desktop {
+        display: none;
+    }
+
+    footer{
+        @include grid(none, 1fr 1fr, none, none, 20px);
+    }
+}

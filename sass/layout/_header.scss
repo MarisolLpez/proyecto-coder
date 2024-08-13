@@ -10,7 +10,7 @@ header {
     }
     ul {
         @include flex(none, none, center, 2.5rem);
-        font-weight: map-get($font-weight , m );
+        font-weight: map-get($font-weight , l );
         margin: 0;
         li {
             font-family: "Poppins", sans-serif;
@@ -27,21 +27,13 @@ header {
                 @extend a:visited;
             }
         }
-        @include tablet {
-            display: none;
-        }
     }
     .max-width-container {
         max-width: var(--max-screen-width);
         flex: 1;
-        @include flex(none, space-between, center, none);
+        @include flex(row, space-between, center, none);
         box-sizing: border-box;
         padding: 0 48px;
     }
 }
 
-.titulo-pagina{
-    @include tablet {
-      font-size: 50px;
-    }
-  }
